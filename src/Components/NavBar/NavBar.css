@@ -1,0 +1,44 @@
+.custom-nav {
+  background-color: #2c3e50;
+  height: 150px; /* الطول الطبيعي */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: height 0.4s ease-in-out; /* عشان الحركة تكون smooth */
+  z-index: 1000;
+}
+
+.custom-brand,
+.custom-links {
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+}
+
+.custom-links {
+  font-size: 20px;
+}
+
+.custom-brand:hover,
+.custom-brand:focus {
+  color: white;
+}
+
+.custom-links:hover,
+.custom-links:focus {
+  color: white !important;
+}
+
+.active {
+  background-color: #1abc9c;
+  color: white !important;
+  border-radius: 5px;
+}
+.custom-nav.sticky {
+  position: sticky;
+  height: 80px;
+}
